@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zed Solutions</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            dark: '#0d1117',
+            primary: '#58a6ff',
+            secondary: '#161b22',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-dark text-white font-sans">
+
+  <!-- Header -->
+  <header class="bg-secondary shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-primary">Zed Solutions</h1>
+      <nav class="space-x-6 text-sm">
+        <a href="#services" class="hover:text-primary">Services</a>
+        <a href="#projects" class="hover:text-primary">Projects</a>
+        <a href="#contact" class="hover:text-primary">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+ <!-- Hero Section with Animated Background -->
+<section class="relative h-screen flex items-center justify-center text-center overflow-hidden bg-dark">
+  <!-- Animated particles background -->
+  <div id="particles-js" class="absolute top-0 left-0 w-full h-full z-0"></div>
+
+  <div class="relative z-10 bg-black bg-opacity-60 p-10 rounded-lg" data-aos="fade-up">
+    <p class="uppercase tracking-widest text-sm text-gray-400 mb-2">A group of passionate freelancers</p>
+    <h2 class="text-4xl md:text-5xl font-extrabold mb-4 text-primary">Tech That Transforms</h2>
+    <p class="text-lg mb-6 text-gray-200">Zed Solutions offers cutting-edge tech services and academic project support with style and speed.</p>
+    <a href="#contact" class="bg-primary text-dark font-semibold px-6 py-3 rounded-full hover:bg-blue-400 transition">Let's Talk</a>
+  </div>
+</section>
+
+<!-- Include particles.js library -->
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script>
+  particlesJS("particles-js", {
+    "particles": {
+      "number": {
+        "value": 60,
+        "density": {
+          "enable": true,
+          "value_area": 1000
+        }
+      },
+      "color": { "value": "#58a6ff" },
+      "shape": {
+        "type": "circle",
+        "stroke": { "width": 0, "color": "#000000" },
+      },
+      "opacity": {
+        "value": 0.5,
+        "random": false,
+        "anim": { "enable": false }
+      },
+      "size": {
+        "value": 3,
+        "random": true,
+        "anim": { "enable": false }
+      },
+      "line_linked": {
+        "enable": true,
+        "distance": 150,
+        "color": "#58a6ff",
+        "opacity": 0.4,
+        "width": 1
+      },
+      "move": {
+        "enable": true,
+        "speed": 2,
+        "direction": "none",
+        "random": false,
+        "straight": false,
+        "out_mode": "out"
+      }
+    },
+    "interactivity": {
+      "detect_on": "canvas",
+      "events": {
+        "onhover": { "enable": true, "mode": "repulse" },
+        "onclick": { "enable": true, "mode": "push" }
+      },
+      "modes": {
+        "repulse": { "distance": 100 },
+        "push": { "particles_nb": 4 }
+      }
+    },
+    "retina_detect": true
+  });
+</script>
+
+
+  <!-- Services -->
+  <section id="services" class="py-20 bg-dark">
+    <div class="max-w-6xl mx-auto px-6">
+      <h3 class="text-3xl font-bold text-center mb-12 text-primary" data-aos="fade-right">Our Services</h3>
+      <div class="grid md:grid-cols-3 gap-10">
+        <div class="bg-secondary p-6 rounded-xl shadow hover:shadow-lg transition" data-aos="fade-up">
+          <img src="https://assets.rappler.com/2AFB7D5E5C734656A2BF5933B04681AC/img/83611058FD43467D99AB4A81C271E237/shutterstock-business-technology.jpg" alt="Tech" class="rounded mb-4">
+          <h4 class="text-xl font-semibold mb-2">Tech Solutions</h4>
+          <p>From full-stack web apps to automation – we deliver solid results, fast.</p>
+        </div>
+        <div class="bg-secondary p-6 rounded-xl shadow hover:shadow-lg transition" data-aos="fade-up" data-aos-delay="100">
+          <img src="https://bdavison.napier.ac.uk/projects/img/woman-5218160_1280.jpg" alt="Academic Help" class="rounded mb-4">
+          <h4 class="text-xl font-semibold mb-2">Academic Projects</h4>
+          <p>Helping students with final-year projects, reports, and presentations.</p>
+        </div>
+        <div class="bg-secondary p-6 rounded-xl shadow hover:shadow-lg transition" data-aos="fade-up" data-aos-delay="200">
+          <img src="https://th.bing.com/th/id/R.c2c6f9503db36a3e01140d1b3d112150?rik=XwE1hEd8%2fJ5Gyw&riu=http%3a%2f%2fwww.psd-dude.com%2ftutorials%2fresources-images%2fstudent-project-ideas%2fproject-ideas-for-university-students.webp&ehk=fiKm33YNGDD22IkPvOj4kc51mJvu05IPIG1Ndy8OYWk%3d&risl=&pid=ImgRaw&r=0" alt="Support" class="rounded mb-4">
+          <h4 class="text-xl font-semibold mb-2">Technical Assistance</h4>
+          <p>Get support in fixing bugs, optimizing code, and choosing the right tech stack.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="py-20 bg-secondary">
+    <div class="max-w-6xl mx-auto px-6">
+      <h3 class="text-3xl font-bold text-center mb-12 text-primary" data-aos="zoom-in">Featured Projects</h3>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-dark rounded-lg shadow p-4" data-aos="flip-left">
+          <img src="https://i1.wp.com/billionaire365.com/wp-content/uploads/2019/02/Ecommerce-Website.jpg?fit=2048%2C1452&ssl=1" class="rounded mb-3" alt="">
+          <h4 class="font-bold text-lg mb-2">E-Commerce Site</h4>
+          <p>Built using Angular, Node.js, and SQL Server – intuitive and secure.</p>
+        </div>
+        <div class="bg-dark rounded-lg shadow p-4" data-aos="flip-left" data-aos-delay="100">
+          <img src="https://www.ermalalibali.com/wp-content/uploads/2023/04/Ermal_ai_chatbotpng.png" class="rounded mb-3" alt="">
+          <h4 class="font-bold text-lg mb-2">AI Chatbot</h4>
+          <p>Custom chatbot with NLP features for academic websites.</p>
+        </div>
+        <div class="bg-dark rounded-lg shadow p-4" data-aos="flip-left" data-aos-delay="200">
+          <img src="https://www.checkboxtechnology.com/wp-content/uploads/2020/09/1_WtdyFZNDahpaoaxMGSCXIw.jpeg" class="rounded mb-3" alt="">
+          <h4 class="font-bold text-lg mb-2">IoT Home Automation</h4>
+          <p>Final-year project: Smart home system with live sensor control.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-20 bg-dark">
+    <div class="max-w-xl mx-auto px-6 text-center" data-aos="fade-up">
+      <h3 class="text-3xl font-bold mb-6 text-primary">Let's Build Something</h3>
+      <p class="mb-4 text-gray-300">Have a project in mind or need academic support? Reach out to us!</p>
+      <form class="space-y-4 mt-6">
+        <input type="text" placeholder="Your Name" class="w-full px-4 py-3 rounded bg-secondary border border-gray-700 text-white" required />
+        <input type="email" placeholder="Your Email" class="w-full px-4 py-3 rounded bg-secondary border border-gray-700 text-white" required />
+        <textarea placeholder="Your Message" class="w-full px-4 py-3 rounded bg-secondary border border-gray-700 text-white" rows="4" required></textarea>
+        <button class="bg-primary text-dark px-6 py-3 rounded hover:bg-blue-400 transition">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black text-gray-400 text-center py-6">
+    <p>&copy; 2025 Zed Solutions. All rights reserved.</p>
+  </footer>
+
+  <!-- AOS Animation Script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init({ once: true });</script>
+
+</body>
+</html>
